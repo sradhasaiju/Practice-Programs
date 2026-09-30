@@ -104,3 +104,17 @@ elif o<0:
 #output
 Enter a number: -58
 -58 is a negative number
+
+
+
+#7.print sum of all the digits of given number
+n=input("Enter a number:")
+s=0
+for i in n:
+    a=int(i)
+    s+=a
+print(s)
+
+#output
+Enter a number:2456
+Sum of digit: 17
