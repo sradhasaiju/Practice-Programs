@@ -118,3 +118,33 @@ print(s)
 #output
 Enter a number:2456
 Sum of digit: 17
+
+
+
+#8.find the factorial of a given number
+n=int(input("Enter a number:"))
+f=1
+for i in range(1,n+1):
+    f*=i
+print(f'Factorial of {n} = {f}')
+
+#output
+Enter a number:10
+Factorial of 10 = 3628800
+
+
+
+#9.find the number is prime or not
+n=int(input("Enter a number:"))
+c=0
+for i in range(1,n+1):
+    if n%i==0:
+        c+=1
+if c==2:
+ print(f'{n} is a prime no')
+else:
+ print(f'{n} is a not prime no')    
+
+#output
+Enter a number:4
+4 is a not prime no
