@@ -185,3 +185,43 @@ Prime numbers between 10 to 99:
 83
 89
 97
+
+
+
+#11.accept 5 number from user and display their cubes
+for i in range(5):
+    n=int(input("Enter a number:"))
+    c=n**3
+    print(f"Cube of {n} is {c}")
+
+#output
+Enter a number:3
+Cube of 3 is 27
+Enter a number:2
+Cube of 2 is 8
+Enter a number:5
+Cube of 5 is 125
+Enter a number:6
+Cube of 6 is 216
+Enter a number:2
+Cube of 2 is 8
+
+
+
+#12.reverse a given number
+n=int(input("Enter a number:"))
+r=0
+o=n
+while n>0:
+  d=n%10
+  r=(r*10)+d
+  n=n//10
+print(r)
+
+#output
+Enter a number:12345
+54321
+
+
+
+#13.
