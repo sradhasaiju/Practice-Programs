@@ -1,9 +1,12 @@
-#1
+#1.add a key and value
 d={0:10,1:20}
 d[2]=30
 print('Dictionary:',d)
 
-#2
+#output
+Dictionary: {0: 10, 1: 20, 2: 30}
+
+#2.concatenate the following dictionaries to create a new one
 d1={1:10,2:20}
 d2={3:30,4:40}
 d3={5:50,6:60}
@@ -16,7 +19,13 @@ print('Dictionary 2:',d2)
 print('Dictionary 3:',d3)
 print('Combined dictionary:',n)
 
-#3
+#output
+Dictionary 1: {1: 10, 2: 20}
+Dictionary 2: {3: 30, 4: 40}
+Dictionary 3: {5: 50, 6: 60}
+Combined dictionary: {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+
+#3.check if a given key already exists in a dictionary
 n=int(input("Enter no"))
 d={}
 for i in range(n):
@@ -28,6 +37,15 @@ if k1 in d:
     print("Key is present in the dictionary")
 else:
     print("Key is not present in the dictionary")
+
+#output
+nter no:2
+Enter a key:1
+Enter a value:10
+Enter a key:2
+Enter a value:20
+Enter the key to be searched:3
+Key is not present in the dictionary
 
 #4
 d={'a':10,'b':20,'c':30,'d':40,'e':50}
