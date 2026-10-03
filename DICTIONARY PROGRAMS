@@ -6,6 +6,8 @@ print('Dictionary:',d)
 #output
 Dictionary: {0: 10, 1: 20, 2: 30}
 
+
+
 #2.concatenate the following dictionaries to create a new one
 d1={1:10,2:20}
 d2={3:30,4:40}
@@ -25,21 +27,23 @@ Dictionary 2: {3: 30, 4: 40}
 Dictionary 3: {5: 50, 6: 60}
 Combined dictionary: {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
 
+
+
 #3.check if a given key already exists in a dictionary
-n=int(input("Enter no"))
+n=int(input("Enter no:"))
 d={}
 for i in range(n):
-    k=input('Enter a key')
-    v=input('Enter a value')
+    k=input('Enter a key:')
+    v=input('Enter a value:')
     d[k]=v
-k1=input("Enter the key to be searched")
+k1=input("Enter the key to be searched:")
 if k1 in d:
     print("Key is present in the dictionary")
 else:
     print("Key is not present in the dictionary")
 
 #output
-nter no:2
+Enter no:2
 Enter a key:1
 Enter a value:10
 Enter a key:2
@@ -47,7 +51,10 @@ Enter a value:20
 Enter the key to be searched:3
 Key is not present in the dictionary
 
-#4
+
+
+#4.iterate over a dictionary using for loop and print the keys alone, 
+#values alone and both keys and values. 
 d={'a':10,'b':20,'c':30,'d':40,'e':50}
 print('Keys:')
 for i in d:
@@ -59,47 +66,90 @@ print("\nKey and Values:")
 for k,v in d.items():
     print(k,v)
 
-#5
+#output
+Keys:
+a
+b
+c
+d
+e
+
+Values:
+10
+20
+30
+40
+50
+
+Key and Values:
+a 10
+b 20
+c 30
+d 40
+e 50
+
+
+
+#5.prepare a dictionary where the keys are numbers between 1 and 15 (both included) and the values are square of the keys
 d={}
 for i in range(1,16):
     d[i]=i**2
 print(d)
 
-#6 to sum all the values in dictionary
+#output
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225}
+
+
+
+#6.to sum all the values in dictionary,considering the values will be of int type.
 d={'a':10,'b':20,'c':30,'d':40,'e':50}
 c=0
 for i in d:
     c+=d[i]
 print(c)
 
+#output
+150
 
-j=0
-for k,v in d.items():
-    j+=v
-print(j)
 
-#7
+
+#7.create dictionary with 5 students,add one,delete one and display all
 my_dict={101:'Laya',102:'Gugu',103:'Ann',104:'Hima',105:"Jo"}
 print('Original dictionary:',my_dict)
 my_dict[106]='Navi'
-print('dictionary after adding:',my_dict)
+print('Dictionary after adding:',my_dict)
 del my_dict[102]
-print('dictionary after removing:',my_dict)
+print('Dictionary after removing:',my_dict)
 
-##8
+#output
+Original dictionary: {101: 'Laya', 102: 'Gugu', 103: 'Ann', 104: 'Hima', 105: 'Jo'}
+Dictionary after adding: {101: 'Laya', 102: 'Gugu', 103: 'Ann', 104: 'Hima', 105: 'Jo', 106: 'Navi'}
+Dictionary after removing: {101: 'Laya', 103: 'Ann', 104: 'Hima', 105: 'Jo', 106: 'Navi'}
+
+
+
+#8.convert list to dictionary
 k=[1,2,3,4,5]
 v=['AAA','BBB','CCC','DDD','EEE']
 d=dict(zip(k,v))
 print(d)
 
+#output
+{1: 'AAA', 2: 'BBB', 3: 'CCC', 4: 'DDD', 5: 'EEE'}
 
-#9
+
+
+#9.convert dictionary to lists,make one list of keys and other of values
 d={1: 'AAA', 2: 'BBB', 3: 'CCC', 4: 'DDD', 5: 'EEE'}
 
 k=list(d.keys())
 v=list(d.values())
 print("Key list:",k)
 print("Value list:",v)
+
+#output
+Key list: [1, 2, 3, 4, 5]
+Value list: ['AAA', 'BBB', 'CCC', 'DDD', 'EEE']
 
 #10
 d={'a':10,'b':20,'c':30,'d':40,'e':50}
