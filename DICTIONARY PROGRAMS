@@ -203,4 +203,9 @@ print(f)
 
 
 #14.sort a dictionary by its values
+s={"Abhi":100,"Binu":150,'Calvin':90,'Daisy':200,"Peter":120}
+d=dict(sorted(s.items().key=lambda item:item[1]))
+print(d)
 
+#output
+{'Calvin': 90, 'Abhi': 100, 'Peter': 120, 'Binu': 150, 'Daisy': 200}
