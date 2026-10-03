@@ -1,1 +1,117 @@
+#1
+d={0:10,1:20}
+d[2]=30
+print('Dictionary:',d)
 
+#2
+d1={1:10,2:20}
+d2={3:30,4:40}
+d3={5:50,6:60}
+n={}
+n.update(d1)
+n.update(d2)
+n.update(d3)
+print('Dictionary 1:',d1)
+print('Dictionary 2:',d2)
+print('Dictionary 3:',d3)
+print('Combined dictionary:',n)
+
+#3
+n=int(input("Enter no"))
+d={}
+for i in range(n):
+    k=input('Enter a key')
+    v=input('Enter a value')
+    d[k]=v
+k1=input("Enter the key to be searched")
+if k1 in d:
+    print("Key is present in the dictionary")
+else:
+    print("Key is not present in the dictionary")
+
+#4
+d={'a':10,'b':20,'c':30,'d':40,'e':50}
+print('Keys:')
+for i in d:
+    print(i)
+print("\nValues:")
+for j in d.values():
+    print(j)
+print("\nKey and Values:")
+for k,v in d.items():
+    print(k,v)
+
+#5
+d={}
+for i in range(1,16):
+    d[i]=i**2
+print(d)
+
+#6 to sum all the values in dictionary
+d={'a':10,'b':20,'c':30,'d':40,'e':50}
+c=0
+for i in d:
+    c+=d[i]
+print(c)
+
+
+j=0
+for k,v in d.items():
+    j+=v
+print(j)
+
+#7
+my_dict={101:'Laya',102:'Gugu',103:'Ann',104:'Hima',105:"Jo"}
+print('Original dictionary:',my_dict)
+my_dict[106]='Navi'
+print('dictionary after adding:',my_dict)
+del my_dict[102]
+print('dictionary after removing:',my_dict)
+
+##8
+k=[1,2,3,4,5]
+v=['AAA','BBB','CCC','DDD','EEE']
+d=dict(zip(k,v))
+print(d)
+
+
+#9
+d={1: 'AAA', 2: 'BBB', 3: 'CCC', 4: 'DDD', 5: 'EEE'}
+
+k=list(d.keys())
+v=list(d.values())
+print("Key list:",k)
+print("Value list:",v)
+
+#10
+d={'a':10,'b':20,'c':30,'d':40,'e':50}
+c=sum(d.values())
+a=c/len(d)
+print(a)
+
+#11
+f={'name':'ABS','panel':'B','class':5,"marks":[10,20,15]}
+a=sorted(f)
+print('Sorted keys',a)
+
+#12
+s={"A":100,"B":150,'C':90,'D':200,"E":120}
+v=max(s.values())
+for i in s:
+    if s[i]==v:
+        print("Student with highest mark:",i)
+print('highest mark:',v)
+
+student=max(s,key=s.get)
+print("Student with highest marks:",student)
+print('marks:',s[student])
+
+#13
+n=[1,2,3,1,2,3,4,5]
+f={}
+for i in n:
+    if i in f:
+        f[i]+=1
+    else:
+        f[i]=1
+print(f)
