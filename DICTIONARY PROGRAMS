@@ -151,30 +151,43 @@ print("Value list:",v)
 Key list: [1, 2, 3, 4, 5]
 Value list: ['AAA', 'BBB', 'CCC', 'DDD', 'EEE']
 
-#10
+
+
+#10.mean of values of dictionary
 d={'a':10,'b':20,'c':30,'d':40,'e':50}
 c=sum(d.values())
 a=c/len(d)
 print(a)
 
-#11
+#output
+30.0
+
+
+#11.sort the elements of the dictionary using sorted() function
 f={'name':'ABS','panel':'B','class':5,"marks":[10,20,15]}
 a=sorted(f)
 print('Sorted keys',a)
 
-#12
-s={"A":100,"B":150,'C':90,'D':200,"E":120}
+#output
+Sorted keys ['class', 'marks', 'name', 'panel']
+
+
+
+#12.find and display the student with the highest marks
+s={"Abhi":100,"Binu":150,'Calvin':90,'Daisy':200,"Peter":120}
 v=max(s.values())
 for i in s:
     if s[i]==v:
         print("Student with highest mark:",i)
-print('highest mark:',v)
+print('Highest mark:',v)
 
-student=max(s,key=s.get)
-print("Student with highest marks:",student)
-print('marks:',s[student])
+#output
+Student with highest mark: Daisy
+Highest mark: 200
 
-#13
+
+
+#13.count the frequency of each element in a list using a dictionary
 n=[1,2,3,1,2,3,4,5]
 f={}
 for i in n:
@@ -183,3 +196,11 @@ for i in n:
     else:
         f[i]=1
 print(f)
+
+#output
+{1: 2, 2: 2, 3: 2, 4: 1, 5: 1}
+
+
+
+#14.sort a dictionary by its values
+
