@@ -5,6 +5,7 @@ print('Hello, World!')
 Hello, World!
 
 
+
 #2.largest among three number
 a=int(input('Enter a number'))
 b=int(input('Enter a number'))
@@ -19,11 +20,13 @@ else:
         print(b,'is the largest')
     else:
         print(c,'is the largest')
+
 #output
 Enter a number50
 Enter a number25
 Enter a number45
 50 is the largest
+
 
 
 #3.sum of two number
@@ -38,6 +41,7 @@ Enter a number:4
 Sum of 3 + 4 = 7
 
 
+
 #4.determine whether number is odd or even
 g=int(input("Enter a number:"))
 if g%2==0:
@@ -48,6 +52,7 @@ else:
 #output
 Enter a number:103
 Odd
+
 
 
 #5.build a calculator to perform addition, subtraction, division, multiplication
@@ -90,6 +95,7 @@ Enter your choice:1
 Enter a number:2
 Enter a number:3
 Sum 2 and 3 = 5
+
 
 
 #6.check whether the given number is positive, negative or zero
@@ -275,6 +281,7 @@ print("School_Name:")
 print("Year:")
 print("Panel:")
 print("Roll_No:")
+
 #output
 Student Name:
 Address:
