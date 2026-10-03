@@ -224,4 +224,129 @@ Enter a number:12345
 
 
 
-#13.
+#13.determine whether a given year is a leap year or not.
+y=int(input("Enter a year: "))
+if y%400==0:
+    print("The year is a leap year")
+elif y%100==0:
+    print("The year is not a leap year")
+elif y%4==0:
+    print("The year is a leap year")
+else:
+    print("The year is not a leap year")
+
+#output
+Enter a year: 2024
+The year is a leap year
+
+
+
+#14.assign a grade based on marks obtained in Math
+m=int(input("Enter marks in Math: "))
+if m>= 90 and m<=100:
+    print("Grade: O")
+elif m>=80 and m<=89:
+    print("Grade: A+")
+elif m>=70 and m<=79:
+    print("Grade: A")
+elif m>=60 and m<=69:
+    print("Grade: B")
+elif m>=50 and m<=59:
+    print("Grade: C")
+elif m>=40 and m<=49:
+    print("Grade: P")
+elif m<40:
+    print("Grade: F")
+else:
+    print("Invalid marks")
+
+#output
+Enter marks in Math: 96
+Grade: O
+
+
+
+#15.print student information fields
+print("Student Name:")
+print("Address:")
+print("Contact_No:")
+print("Mother Tongue:")
+print("School_Name:")
+print("Year:")
+print("Panel:")
+print("Roll_No:")
+#output
+Student Name:
+Address:
+Contact_No:
+Mother Tongue:
+School_Name:
+Year:
+Panel:
+Roll_No:
+
+
+
+#16. Modified program with specific fields converted into multi-line comments
+print("Student Name:")
+"""
+print("Address:")
+print("Contact_No:")
+print("Mother Tongue:")
+"""
+print("School_Name:")
+print("Year:")
+print("Panel:")
+print("Roll_No:")
+
+#output
+Student Name:
+School_Name:
+Year:
+Panel:
+Roll_No:
+
+
+
+#17.calculate student percentage and find highest and lowest marks
+n=input("Enter Student Name: ")
+r=input("Enter Roll Number: ")
+m=float(input("Enter marks in Mathematics: "))
+p=float(input("Enter marks in Physics: "))
+c=float(input("Enter marks in Chemistry: "))
+per=(m+p+c) / 3
+print("\nStudent Name:", n)
+print("Roll Number:", r)
+print("Percentage:", per)
+
+#highest mark
+if m>=p and m>=c:
+    h="Mathematics"
+elif p>= m and p>=c:
+    h="Physics"
+else:
+    h="Chemistry"
+
+#lowest marks
+if m<=p and m<=c:
+    l="Mathematics"
+elif p<=m and p<=c:
+    l="Physics"
+else:
+    l="Chemistry"
+print("Subject with Highest Marks:",h)
+print("Subject with Lowest Marks:", l)
+
+#output
+Enter Student Name: Akash 
+Enter Roll Number: 124
+Enter marks in Mathematics: 85
+Enter marks in Physics: 45
+Enter marks in Chemistry: 79
+
+Student Name: Akash 
+Roll Number: 124
+Percentage: 69.66666666666667
+Subject with Highest Marks: Mathematics
+Subject with Lowest Marks: Physics
+
