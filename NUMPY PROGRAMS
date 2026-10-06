@@ -1,0 +1,53 @@
+#create 0-D,1-D,2-D,3-D array
+import numpy as np
+a1=np.array(12)
+a2=np.array([1,2,3])
+a3=np.array([[1,2,3], [4,5,6]])
+a4=np.array([[[1,2,3]], [[4,5,6]], [[7,8,9]]])
+print("0-D Array:",a1)
+print("1-D Array:",a2)
+print("2-D Array:",a3)
+print("3-D Array:",a4)
+
+#output
+0-D Array:
+ 12
+1-D Array:
+ [1 2 3]
+2-D Array:
+ [[1 2 3]
+ [4 5 6]]
+3-D Array:
+ [[[1 2 3]]
+
+ [[4 5 6]]
+
+ [[7 8 9]]]
+
+
+
+#access the third and fourth element from the array and add them
+import numpy as np
+a=np.array([1,2,3,4])
+print(a[2]+a[3])
+
+#ouput
+7
+
+#access the second element on first row
+import numpy as np
+a=np.array([[1,2,3],[4,5,6]])
+print("2nd element on 1st row:",a[0,1])
+
+#output
+2nd element on 1st row: 2
+
+#print the elements from index 1 to 4 of the second row
+import numpy as np
+a=np.array([[1,2,3,4],[5,6,7,8]])
+print(a[1,1:4])
+
+#output
+[6 7 8]
+
+#
