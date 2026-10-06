@@ -34,6 +34,8 @@ print(a[2]+a[3])
 #ouput
 7
 
+
+
 #access the second element on first row
 import numpy as np
 a=np.array([[1,2,3],[4,5,6]])
@@ -41,6 +43,8 @@ print("2nd element on 1st row:",a[0,1])
 
 #output
 2nd element on 1st row: 2
+
+
 
 #print the elements from index 1 to 4 of the second row
 import numpy as np
@@ -50,9 +54,12 @@ print(a[1,1:4])
 #output
 [6 7 8]
 
+
+
 #retrieve 2 rows and all columns of it
 a=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
 print(a[:2,:])
+
 #output
 [[1 2 3 4]
  [5 6 7 8]]
